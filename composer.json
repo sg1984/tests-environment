@@ -1,0 +1,17 @@
+{
+    "require": {
+        "codeception/codeception": "*",
+        "jakoch/phantomjs-installer": "1.9.8"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ],
+        "post-update-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ]
+    }
+}
